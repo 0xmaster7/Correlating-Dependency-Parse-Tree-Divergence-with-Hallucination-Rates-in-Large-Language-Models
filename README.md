@@ -18,12 +18,26 @@ Current findings for models like **Llama-3.2-3B** and **Qwen-2.5-7B** suggest th
 
 ---
 
-## 🚀 Setup & Execution
+### 🚀 Setup & Execution
 
-### 1. Environment Setup
-It is highly recommended to use a clean environment to avoid dependency conflicts.
-
-**Conda (Recommended):**
 ```bash
-conda create -n nlp_research python=3.10 -y
-conda activate nlp_research
+git clone https://github.com/0xmaster7/Correlating-Abstract-Syntax-Tree-Divergence-with-Hallucination-Rates-in-Large-Language-Models.git
+cd Correlating-Abstract-Syntax-Tree-Divergence-with-Hallucination-Rates-in-Large-Language-Models
+
+# macOS / Linux
+python3 -m venv nlp_env
+source nlp_env/bin/activate
+
+# Windows
+python -m venv nlp_env
+.\nlp_env\Scripts\activate
+
+pip install -r requirements.txt
+# Generate dataset
+python generate_questions.py
+
+# Run inference
+python hf_models.py
+
+# Analyze results
+python analyze_results.py
