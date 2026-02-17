@@ -1,0 +1,1 @@
+i tried to make it easier for u guys just run the requirements.txt file and run any file u want but if there r missing files dont blame me im using anaconda env ;-;
