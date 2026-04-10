@@ -1,0 +1,10 @@
+graph_*.png
+pca_*.png
+feature_importance_*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
